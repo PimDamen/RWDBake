@@ -1,0 +1,60 @@
+@media screen and (min-device-width: 768px) {
+   
+    .serviceCards {       
+        grid-template-columns: repeat(2, 1fr);       
+        
+    }
+    body{
+        background-color: red;
+    }
+
+    .productContainer{
+        /* display: grid; */
+        grid-template-columns:repeat(3, 1fr);     
+        
+    }
+    .productContainer .productCard:nth-child(n+2) { display:unset;}
+    .productContainer .productCard:nth-child(n+7) { display:none}
+    footer .container{
+       
+        grid-template-columns: repeat(2, 1fr);
+       
+
+    }
+
+     /* ## About ## */
+     .aboutSub{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:repeat(3, 1fr) ;
+        gap: 0.5rem;
+        padding: 0 5%;
+        text-align: center;
+    }
+    .aboutSub img {
+        display:unset;
+    }
+    form {    
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        flex-direction: row; 
+        gap: 1rem; 
+                
+    }
+    input[type=text] {     
+        
+         border: 0.5px solid white;
+           
+     }
+     input[type=submit] {
+       
+         width:30%;
+         height: 2rem;
+        
+     }
+ 
+
+
+    
+}
