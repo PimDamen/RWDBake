@@ -25,14 +25,18 @@
      /* ## About ## */
      .aboutSub{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows:repeat(3, 1fr) ;
-        gap: 0.5rem;
+        /* grid-template-columns: repeat(1, 1fr); */
+        grid-template-rows:max-content;
+        gap: 1rem;
         padding: 0 5%;
         text-align: center;
     }
+    .aboutSub div{
+        height: fit-content;
+    }
     .aboutSub img {
         display:unset;
+        margin: 0 auto;
     }
     form {    
         display: flex;

@@ -7,16 +7,16 @@
     h1{
         text-transform: uppercase;
         font-family: "open_sansregular";
-        font-size:2rem;
+        /* font-size:2rem; */
     }
     h2{
         text-transform: uppercase;
         font-family: "open_sansregular";
-        font-size:1.2rem;
+        /* font-size:; */
     }
     p{
         font-family: "open_sanslight";
-        font-size:1rem;
+        font-size:14px;
     }
     
     hr {
