@@ -5,7 +5,7 @@
         
     }
     body{
-        background-color: red;
+        
     }
 
     .productContainer{
@@ -20,6 +20,11 @@
         grid-template-columns: repeat(2, 1fr);
        
 
+    }
+
+    .productCard img{
+        height: 300px;
+        transform: translateX(-40%);
     }
 
      /* ## About ## */

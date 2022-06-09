@@ -7,11 +7,13 @@
     h1{
         text-transform: uppercase;
         font-family: "open_sansregular";
+        color: #684F40;
         /* font-size:2rem; */
     }
     h2{
         text-transform: uppercase;
         font-family: "open_sansregular";
+        color: #684F40;
         /* font-size:; */
     }
     p{
@@ -26,47 +28,52 @@
 
     /* ## Products ## */
     .products{
-        margin: 0 15%;
+        margin: 0 10%;
     }
     
     .productHeader{
         text-align: center;
+        margin-bottom: 2rem;
     }
+     /* # place the products in a grid */
     .productContainer{
         display: grid;
-        grid-template-columns:repeat(1, 1fr);
-        overflow-x: hidden;
-        /* max-height: 90px; */
+        grid-template-columns: repeat(1, 1fr);          
         gap: 1rem;
         
     }
+     /* # set card properties and height because the image needs the exact same height */
     .productCard{   
         position: relative;  
         text-align: center;  
         gap:2rem;         
         border: 0.1rem solid black;
         font-size: small;      
-        height: 300px;
-        background-repeat: no-repeat;  
+        height: 300px;        
         overflow: hidden;
     
         
     }
     .productCard img{
         height: 300px;
+       
     }
+
+    /* # set the position to height 0 so it wont show and position absolute,fast transition so it moves*/
     .productInfo{  
-        height:0;            
+        height: 0;            
         width: 100%;
         padding: 0;
         position: absolute;
-        bottom: 0%;
+        bottom: 0;
         font-size: 40px;
         transition-duration: 0.1s;
     }
+    /* # added 80 to the background color, notice 80 after #FDB822 */
     .productCard:hover .productInfo{
         height: 50%;
-        background-color:rgba(155, 161, 65, 0.5);;
+        background-color:#FDB82280;
+
         
     }
     .productCard:hover img{
@@ -172,7 +179,7 @@
 
         /* ## Services ## */
     body{
-        background-color: burlywood;
+       
     }
     .services{
         margin: 0 15%;
@@ -203,12 +210,18 @@
     }
 
         /* ## About ## */
+        .aboutSub h2{
+            color: #ffffff;
+        }
         .aboutSub{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows:repeat(3, 1fr) ;
             gap: 1rem;
+            margin:0 5%;
             padding: 0 5%;
+            background-color: #696969;
+            
         }
         .aboutSub img {
             display: none;
@@ -240,16 +253,66 @@
     
 
         /* ## Footer ## */
+        footer h2{
+            color: #ffffff;
+            
+        }
+            /* # Note that the social media icons are the old version of FontAwesome  */
+        #footerSocMed ::before{
+            font-family: "FontAwesome";
+            color: #FFFFFF;
+            font-weight: normal;
+            font-size: 1rem;
+
+        }
+       
+        #footerSocMed a{
+            font-size: 0;
+            text-decoration: none;
+    
+        }
+        #footerSocMed{
+            display: flex;
+           
+        }
+        #footerSocMed li{
+            margin: 0 0.25rem;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+            padding:5px;
+        }
+        #footerSocMed li:nth-child(1) a::before{ 
+            content:"\f39e";                  
+        }
+        #footerSocMed li:nth-child(2) a::before{ 
+            content:"\f099";           
+        }
+        #footerSocMed li:nth-child(3) a::before{ 
+            content:"\f09e";           
+        }
+        #footerSocMed li:nth-child(4) a::before{ 
+            content:"\f0d2";           
+        }
+        #footerSocMed li:nth-child(5) a::before{ 
+            content:"\f08c";           
+        }
+        
+        
 
     footer .container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         margin:0 5%;
-        background-color: black;
+        background-color: #333333;
         color: white;
 
     }
 
     /* # testomonials # */
-  
+  .colors p{
+      margin:10px;
+      border: 1px solid black;
+      height:50px;
+  }
+    
