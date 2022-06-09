@@ -26,8 +26,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows:repeat(2, 1fr) ;
-        gap: 0.5rem;
-        padding: 0 5%;
+        gap: 0.5rem;      
         text-align: left;
     }
     .aboutSub img {        
@@ -59,11 +58,7 @@
          margin-right: 10px;
            
      }
-     input[type=submit] {       
-         width:30%;
-         height: 2rem;
-        
-     }\
+  
  
 
 
