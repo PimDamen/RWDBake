@@ -28,45 +28,10 @@
     .products{
         margin: 0 15%;
     }
+    
     .productHeader{
         text-align: center;
     }
-    .productCard{     
-        text-align: center;  
-        gap:2rem; 
-        padding:1em; 
-        border: 0.1rem solid black;
-        font-size: small;
-      
-        height:40vh;
-        background-repeat: no-repeat;
-        
-      
-        
-    }
-    .productContainer .productCard:nth-child(1){
-        background-image: url("../images/products/m-product-1.jpg");
-        background-position: center;
-        background-size: 150%;
-     
-        
-    }
-
-     /* #Note: productcards should be shown or not shown depending on breakpoint */
-    /* .productContainer .productCard:nth-child(2) { display:grid}
-    .productContainer .productCard:nth-child(2) { display:none}
-    .productContainer .productCard:nth-child(3) { display:none}
-    .productContainer .productCard:nth-child(4) { display:none}
-    .productContainer .productCard:nth-child(5) { display:none}
-    .productContainer .productCard:nth-child(6) { display:none}
-    .productContainer .productCard:nth-child(7) { display:none}
-    .productContainer .productCard:nth-child(8) { display:none}
-    .productContainer .productCard:nth-child(9) { display:none}
-    .productContainer .productCard:nth-child(10) { display:none}
-    .productContainer .productCard:nth-child(11) { display:none}
-    .productContainer .productCard:nth-child(12) { display:none} */
-    .productContainer .productCard:nth-child(n+2) { display:none;}
-
     .productContainer{
         display: grid;
         grid-template-columns:repeat(1, 1fr);
@@ -75,6 +40,81 @@
         gap: 1rem;
         
     }
+    .productCard{   
+        position: relative;  
+        text-align: center;  
+        gap:2rem;         
+        border: 0.1rem solid black;
+        font-size: small;      
+        height: 300px;
+        background-repeat: no-repeat;  
+        overflow: hidden;
+    
+        
+    }
+    .productCard img{
+        height: 300px;
+    }
+    .productInfo{  
+        height:0;            
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        bottom: 0%;
+        font-size: 40px;
+        transition-duration: 0.1s;
+    }
+    .productCard:hover .productInfo{
+        height: 50%;
+        background-color:rgba(155, 161, 65, 0.5);;
+        
+    }
+    .productCard:hover img{
+        opacity: 0.5;
+    }
+
+    .productInfo ul{        
+        margin: 0 auto;
+        align-items: center;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;      
+        padding: 0 0 5% 0;
+     
+    }
+    .productInfo ::after{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight:600;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding:1rem;
+    }
+    .productInfo li:nth-child(1)::after{
+        content:"\f002"; 
+        
+    }
+    .productInfo li:nth-child(2)::after{
+        content:"\f0c1"; 
+        
+    }
+    .productInfo li:nth-child(3)::after{
+        content:"\f07a"; 
+       
+    }
+
+    /* .productContainer .productCard:nth-child(1){
+        background-image: url("../images/products/m-product-1.jpg");
+        background-position: center;
+        background-size: 150%;
+     
+        
+    } */
+
+  
+    .productContainer .productCard:nth-child(n+2) { display:none;}
+
+   
 
         /* ## Testimonials ## */
     
