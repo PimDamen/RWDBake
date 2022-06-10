@@ -49,14 +49,53 @@
         gap:2rem;         
         border: 0.1rem solid black;
         font-size: small;      
-        height: 300px;        
-        overflow: hidden;
+        height: 25vh;        
+        overflow: hidden;         
+    }  
+   
+    .productCard {
+        
     
+        background-position: center;
+        background-size: 200% ;
+        background-repeat: no-repeat;
         
     }
-    .productCard img{
-        height: 300px;
-       
+    .productCard:nth-child(1){
+        background-image: url("../images/products/m-product-1.jpg");
+    }
+    .productCard:nth-child(2){
+        background-image: url("../images/products/m-product-2.jpg");
+    }
+    .productCard:nth-child(3){
+        background-image: url("../images/products/m-product-3.jpg");
+    }
+    .productCard:nth-child(4){
+        background-image: url("../images/products/m-product-4.jpg");
+    }
+    .productCard:nth-child(5){
+        background-image: url("../images/products/m-product-5.jpg");
+    }
+    .productCard:nth-child(6){
+        background-image: url("../images/products/m-product-6.jpg");
+    }
+    .productCard:nth-child(7){
+        background-image: url("../images/products/m-product-7.jpg");
+    }
+    .productCard:nth-child(8){
+        background-image: url("../images/products/m-product-8.jpg");
+    }
+    .productCard:nth-child(9){
+        background-image: url("../images/products/m-product-9.jpg");
+    }
+    .productCard:nth-child(10){
+        background-image: url("../images/products/m-product-10.jpg");
+    }
+    .productCard:nth-child(11){
+        background-image: url("../images/products/m-product-11.jpg");
+    }
+    .productCard:nth-child(12){
+        background-image: url("../images/products/m-product-12.jpg");
     }
 
     /* # set the position to height 0 so it wont show and position absolute,fast transition so it moves*/
