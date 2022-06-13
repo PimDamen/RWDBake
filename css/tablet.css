@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) {
    
     .serviceCards {       
         grid-template-columns: repeat(2, 1fr);       
@@ -7,9 +7,10 @@
     body{
         
     }
+        /* ## Products ## */
 
     .productContainer{
-        /* display: grid; */
+        
         grid-template-columns:repeat(3, 1fr);     
         
     }
@@ -22,10 +23,32 @@
 
     }
 
-    .productCard img{
-        width: 100%;
-        height: 100%;
-    }
+            /* ## Testimonials ## */
+
+            
+            .testimonialCard img{             
+                right:100%;
+                height:100%;
+                top: 0rem;
+                transform: rotate(-5deg);
+            }
+            .testimonialCard h2{               
+                right: 40%;
+                top: unset;
+                bottom: 10%;
+                color: #FFFFFF;   
+                background-color: #684F40;   
+                padding: 1.5rem; 
+                      
+            }
+            .testimonialCard p{               
+                bottom: 25%;
+                left: 60%; 
+                
+            }
+
+    
+    
 
      /* ## About ## */
      .aboutSub{
@@ -50,17 +73,17 @@
         gap: 1rem; 
                 
     }
-    input[type=text] {     
-        
-         border: 0.5px solid white;
-           
-     }
+  
      input[type=submit] {
        
          width:30%;
          height: 2rem;
         
      }
+      /* ##Footer## */
+     footer .container{
+        padding: 1.5rem;
+    }
  
 
 
