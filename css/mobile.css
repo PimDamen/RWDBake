@@ -1,7 +1,11 @@
 
     body{
-        box-sizing: border-box;
-        width: 100vw;
+        box-sizing: border-box;     
+        max-width: 1020px;
+        min-width: 320px;
+        margin: 0 auto;
+     
+         
       
        
     }
@@ -9,13 +13,13 @@
         text-transform: uppercase;
         font-family: "open_sansregular";
         color: #684F40;
-        /* font-size:2rem; */
+        
     }
     h2{
         text-transform: uppercase;
         font-family: "open_sansregular";
         color: #684F40;
-        /* font-size:; */
+        
     }
     p{
         font-family: "open_sanslight";
@@ -26,10 +30,16 @@
         width:5rem;
         color: yellow;
     }
+      /* Remove all unneeded decoration in links  */
+    a, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+   }
 
-    /* ## Products ## */
+        /* ## Products ## */
+    
     .products{
-        margin: 0 10%;
+        margin: 0 5%;
     }
     
     .productHeader{
@@ -157,67 +167,60 @@
    
 
         /* ## Testimonials ## */
-        .testimonials{
-            margin-bottom: 1rem;
-        }
-    
-        .testimonialContainer{
-            position: relative; 
-            width: 100vw;          
-            height: 40vh;
-            overflow: hidden;
-        }
-        .testimonialContainer.img{
-            position: absolute;            
-            opacity: 0.5;
-            width: 200%;
-            /* height: 100%;            */
-        }
-        .testimonialCard{
-            position: absolute;
-            top: 0;
-            left: 0;
-            
-            width: 100vw;
-            height: 40vh;
-            z-index: 1;
-            background-color: #FDB82280;
-        }
-        .testimonialCard img{
-            opacity: unset;
-            position: absolute;
-            left: 10%;
-            height: 60%;
-            top: -1rem;
-            transform: rotate(-10deg);
-            border: 1px solid black;
-            padding: 0.5rem;
-            background-color: white;
-        }
-        .testimonialCard h2{
-            position: absolute;
-            right: 20%;
-            top: 20vh;
-            font-size: 1.5rem;
-            
-        }
-        .testimonialCard p{
-            position: absolute;
-            bottom: 0;
-            padding: 2rem;
-            z-index: 2;
-            font-family: "open_sansregular";
-            font-size: 1.5rem;
-            color: #684F40;
+    .testimonials{
+        margin-bottom: 1rem;
+    }
 
-        }
+    .testimonialContainer{
+        position: relative; 
+        width: 100%;          
+        height: 40vh;
+        overflow: hidden;
+    }
+    .testimonialContainer.img{
+        position: absolute;            
+        opacity: 0.5;
+        width: 200%;
+       
+    }
+    .testimonialCard{
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 40vh;
+        z-index: 1;
+        background-color: #FDB82280;
+    }
+    .testimonialCard img{
+        opacity: unset;
+        position: absolute;
+        right: 65%;
+        height: 60%;
+        top: -1rem;
+        transform: rotate(-10deg);
+        border: 1px solid black;
+        padding: 0.5rem;
+        background-color: white;
+    }
+    .testimonialCard h2{
+        position: absolute;
+        right: 20%;
+        bottom: 50%;
+        font-size: 1rem;
+        
+    }
+    .testimonialCard p{
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        z-index: 2;
+        font-family: "open_sansregular";
+        font-size: 1rem;
+        color: #684F40;
 
-         
-         
-
-
-    
-
+    }    
         /* ## Services ## */
     
     .services{
@@ -248,95 +251,102 @@
     }
 
         /* ## About ## */
-        .aboutSub h2{
-            color: #ffffff;
-        }
-        .aboutSub{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows:repeat(3, 1fr) ;
-            gap: 1rem;
-            margin:0 5%;
-            padding: 0 5%;
-            background-color: #696969;
+   
+    .aboutSub{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:repeat(3, 1fr) ;
+        gap: 1rem;
+        margin:0 5%;
+        padding: 5%;
+        background-color: #696969;
+        
+    }
+    .aboutSub img {
+        display: none;
+    }
+    .aboutSub h2{
+        color: #ffffff;
+    }
+    .aboutSub p{
+        color: #ffffff;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        
+    }
+    form {    
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        flex-direction: column;             
+    }
+    input[type=text] {
+        width: 100%;
+        height: 2rem; 
+        border: 0;
+        padding: 0; 
+        background-color: #696969;
+        color: #ffffff;
+        border: 0.5px solid white;
             
-        }
-        .aboutSub img {
-            display: none;
-        }
-        form {    
-            display: flex;
-            justify-content: center;
-            align-items: center;       
-            flex-direction: column;             
-        }
-        input[type=text] {
-           width: 100%;
-           height: 2rem; 
-            border: 0;
-            padding: 0; 
-            background-color: #696969;
-            color: #ffffff;
-            border: 0.5px solid white;
-              
-        }
-        input[type=submit] {
-            font-family: "open_sansregular";
-            font-size: 1rem;
-            text-transform: uppercase;
-            width: 100%;
-            height: 2rem;
-            border: 0;
-            padding: 0;
-        }
+    }
+    input[type=submit] {
+        font-family: "open_sansregular";
+        font-size: 1rem;
+        text-transform: uppercase;
+        width: 100%;
+        height: 2rem;
+        border: 0;
+        padding: 0;
+    }
     
 
         /* ## Footer ## */
-        footer h2{
-            color: #ffffff;
-            
-        }
-            /* # Note that the social media icons are the old version of FontAwesome  */
-        #footerSocMed ::before{
-            font-family: "FontAwesome";
-            color: #FFFFFF;
-            font-weight: normal;
-            font-size: 1rem;
+    footer h2{
+        color: #ffffff;
+        
+    }
+        /* # Note that the social media icons are the old version of FontAwesome  */
+    #footerSocMed ::before{
+        font-family: "FontAwesome";
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 1rem;
 
-        }
-       
-        #footerSocMed a{
-            font-size: 0;
-            text-decoration: none;
+    }
     
-        }
-        #footerSocMed{
-            display: flex;
-           
-        }
-        #footerSocMed li{
-            margin: 0 0.25rem;
-            border: 1px solid #FFFFFF;
-            border-radius: 50%;
-            padding:5px;
-        }
-        #footerSocMed li:nth-child(1) a::before{ 
-            content:"\f39e";                  
-        }
-        #footerSocMed li:nth-child(2) a::before{ 
-            content:"\f099";           
-        }
-        #footerSocMed li:nth-child(3) a::before{ 
-            content:"\f09e";           
-        }
-        #footerSocMed li:nth-child(4) a::before{ 
-            content:"\f0d2";           
-        }
-        #footerSocMed li:nth-child(5) a::before{ 
-            content:"\f08c";           
-        }
+    #footerSocMed a{
+        font-size: 0;
+        text-decoration: none;
+
+    }
+    #footerSocMed{
+        display: flex;
         
-        
+    }
+    #footerSocMed li{
+        margin: 0 0.25rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        padding:5px;
+    }
+    #footerSocMed li:nth-child(1) a::before{ 
+        content:"\f39e";                  
+    }
+    #footerSocMed li:nth-child(2) a::before{ 
+        content:"\f099";           
+    }
+    #footerSocMed li:nth-child(3) a::before{ 
+        content:"\f09e";           
+    }
+    #footerSocMed li:nth-child(4) a::before{ 
+        content:"\f0d2";           
+    }
+    #footerSocMed li:nth-child(5) a::before{ 
+        content:"\f08c";           
+    }
+    
+    
 
     footer .container{
         display: grid;
@@ -344,11 +354,36 @@
         gap: 1rem;
         margin:0 5%;
         background-color: #333333;
-        color: white;
-
+        color: white; 
+        padding: 5%; 
+        font-size: 0.8rem;       
+        
     }
+    footer h2{
+        padding: 0 0 1rem 0;
+    }
+    #footerContactUs ::before{
+        font-family: "FontAwesome";
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+    #footerContactUs li:nth-child(1)::before{
+        content:"\f095";
+    }
+    #footerContactUs li:nth-child(2)::before{
+        content:"\f124";
+    }
+    #footerContactUs li:nth-child(3)::before{
+        content:"\f0e0";
+    }
+    #footerContactUs li:nth-child(4)::before{
+        content:"\f0ac";
+    }
+   
 
-    /* # testomonials # */
+  
   .colors p{
       margin:10px;
       border: 1px solid black;

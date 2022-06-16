@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
    
     .serviceCards {       
         grid-template-columns: repeat(2, 1fr);       
@@ -23,29 +23,29 @@
 
     }
 
-            /* ## Testimonials ## */
+    /* ## Testimonials ## */
 
-            
-            .testimonialCard img{             
-                right:100%;
-                height:100%;
-                top: 0rem;
-                transform: rotate(-5deg);
-            }
-            .testimonialCard h2{               
-                right: 40%;
-                top: unset;
-                bottom: 10%;
-                color: #FFFFFF;   
-                background-color: #684F40;   
-                padding: 1.5rem; 
-                      
-            }
-            .testimonialCard p{               
-                bottom: 25%;
-                left: 60%; 
+    
+    .testimonialCard img{             
+        right: 70%;
+        height:100%;
+        top: 0rem;
+        transform: rotate(-5deg);
+    }
+    .testimonialCard h2{               
+        right: 60%;
+        top: unset;
+        bottom: 10%;
+        color: #FFFFFF;   
+        background-color: #684F40;   
+        padding: 0.7rem; 
                 
-            }
+    }
+    .testimonialCard p{               
+        bottom: 25%;
+        left: 45%; 
+        
+    }
 
     
     
@@ -54,8 +54,7 @@
      .aboutSub{
         display: grid;        
         grid-template-rows:max-content;
-        gap: 1rem;
-        padding: 0 5%;
+        gap: 1rem;        
         text-align: center;
     }
     .aboutSub div{
@@ -76,14 +75,13 @@
   
      input[type=submit] {
        
-         width:30%;
+         width:45%;
          height: 2rem;
+         font-size: 0.8rem;
         
      }
       /* ##Footer## */
-     footer .container{
-        padding: 1.5rem;
-    }
+    
  
 
 
