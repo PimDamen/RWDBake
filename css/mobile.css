@@ -50,14 +50,15 @@ body{
      #showMenu{
         appearance: none; 
         position: absolute;
-        right:5%;  
+        right:5%;
+       
             
         }
            /* the burger icon is defined here */
     #showMenu::after{
         content:"\2630";
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align:right;
         transition: transform 0.05s ease-in-out;
         padding:10px;  
@@ -110,38 +111,39 @@ body{
     }
 
         /* END NAVIGATION */
-    .heroSection hr{
-        width:100%;
-    }
 
-    .heroHeader{        
+
+        /* ## Hero Header## */
+    
+
+    .heroSection{        
         background-image: url(../images/sliders/M-slide-2.jpeg);        
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
-        position: relative;        
+        /* position: relative;         */
         width: 100%;
-        height: 50vh;
+        height: 40vh;
        
        
     }
-    .heroHeader:after{
-        width: 100%;
-        background-color: black;
-        height:1px;
-        margin-top: 2px;
-      
-    }
-    .heroHeader div{
-        position: absolute;      
+
+    .heroHeader{
+        /* position: absolute;       */
         color: white;
         font-size: 2rem;
         top:40%;       
         color: #FFFFFF;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        
+        margin-top: auto;
+        margin-bottom:auto;   
+        display: flex;
+        /* align-content: center;  */
+        justify-content: center; 
+        align-items: flex-end; 
+        /* align-items: center;  */
+      
+         
     }
     .heroHeader h1{
         color:#FFFF
@@ -157,6 +159,7 @@ body{
     
     .products{
         margin: 0 5%;
+       
     }
     
     .productHeader{
