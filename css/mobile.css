@@ -6,6 +6,9 @@ body{
     margin: 0 auto;
     position: relative;   
 }
+body > hr{
+    width: 100%;
+}
     h1{
         text-transform: uppercase;
         font-family: "open_sansregular";
@@ -45,6 +48,7 @@ body{
         width: 100%;
         height: 5vh;
         z-index: 5;
+        top:0.3%;
         position: absolute;
     }
      #showMenu{
@@ -59,8 +63,7 @@ body{
         content:"\2630";
         display: block;
         font-size: 1.2rem;
-        text-align:right;
-        transition: transform 0.05s ease-in-out;
+        text-align:right;        
         padding:10px;  
     }
            
@@ -71,7 +74,7 @@ body{
         grid-template-columns: repeat(8, 1fr);
         text-align: center;
         position: absolute;
-        top:5vh;
+        top: 5vh;
         background-color: #CCCCCC95;
         width: 100%;
             
@@ -86,7 +89,7 @@ body{
                 
     }     
     nav li {
-    /* display: inline-block;         */
+    
     font-family: "open_sanslight";        
     }
     nav  img{
@@ -103,11 +106,22 @@ body{
    
 }
 nav li{
-    border-right: 1px solid black;
+    background-color: none;
+    transition: all 0.5s ease-in-out;
+    /* border-right: 1px solid black; */
+    /* cancelled border as viable option for seperators */
+}
+nav li:hover{
+    background-color: #FDB822;
+
+    /* border-right: 1px solid black; */
 }
 nav li:nth-child(9){
-    border: 0;
+    display: none;
+    
+    
 }
+
 
     /* Borders need to be added between li's this does need to cross over to other media.  */
     /* in mobile, the logo is not included in the grid. but shown in the naxbar instead. they swap over */

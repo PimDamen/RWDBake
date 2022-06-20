@@ -1,7 +1,28 @@
 @media screen and (min-width: 1020px) {
 
 
-   
+        /* ## Navigation ## */
+    nav ul{
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);   
+        grid-template-rows: 3;  
+        text-align: center; 
+        font-family: "open_sansregular";
+        color: #684F40;
+        font-size: 1.1rem; 
+        gap: 1rem;            
+        
+    }
+  
+    nav li:nth-child(9){
+        grid-column-start: 1;
+        grid-column-end: 17;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .verticleLine{
+        appearance: none;
+    }
    
         /* ## Products ## */
 

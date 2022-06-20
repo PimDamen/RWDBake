@@ -1,9 +1,6 @@
 @media screen and (min-width: 768px) {
    
-    .serviceCards {       
-        grid-template-columns: repeat(2, 1fr);       
-        
-    }
+   
         /* ## Navigation ## */
         /* navigation is reset in tablet form and passes through to desktop ignoring all settings from the mobile version.  */
 
@@ -11,39 +8,46 @@
         display: none;
     }
     nav{
-        width: 80%;
-        margin: 5% auto;
+        width: 90%;
+        margin: 2% auto;
         
     }
     .mobileOnlyNavImg{
         display: none;
     }
+    .verticleLine{
+        background-color:#696969 ;
+        width: 100%;
+        height: 100%;
+    }
+
 
     nav ul{
         display: grid;
-        grid-template-columns: repeat(4, 1fr) 20% repeat(4, 1fr);       
+        grid-template-columns: repeat(8, 1fr) 20% repeat(8, 1fr);       
         text-align: center; 
         font-family: "open_sansregular";
         color: #684F40;
-        font-size: 1.2rem;     
+        font-size: 1.1rem; 
+          
        
     }
     nav li{
         margin: auto 0;
-        border-right: 3px solid #CCCCCC;
-        font
+        border-right: none;
+       
     }
     nav li:nth-child(1){
         display: unset;
     }
-    nav li:nth-child(5){
+    nav li:nth-child(9){
         display: unset;
         object-fit: contain;        
-        image-orientation: from-image;      
     }
-    nav li:nth-child(n+4):nth-child(-n+5){
+    /* in the tablet version no border or deviding line after products ad the image */
+    /* nav li:nth-child(n+4):nth-child(-n+5){
         border: none;
-    }
+    } */
     .navImg{
         display: unset; 
         grid-column-start: 5;
@@ -51,13 +55,18 @@
         /* width: 100%;       */
 
     }
+            /* background of navigation hover over should not be set ever.  */
+    nav li:nth-child(9):hover{
+        background-color: none;
+        
+    }
     
 
         /* ## Products ## */
 
     .productContainer{
         
-        grid-template-rows:repeat(3, 1fr);     
+        grid-template-columns:repeat(3, 1fr);     
         
     }
     .productContainer .productCard:nth-child(n+2) { display:unset;}
@@ -69,7 +78,7 @@
 
     }
 
-    /* ## Testimonials ## */
+        /* ## Testimonials ## */
 
     
     .testimonialCard img{             
@@ -92,11 +101,15 @@
         left: 45%; 
         
     }
-
+        /* ## Services ## */
+    .serviceCards {       
+        grid-template-columns: repeat(2, 1fr);       
+        
+    }
     
     
 
-     /* ## About ## */
+        /* ## About ## */
      .aboutSub{
         display: grid;        
         grid-template-rows:max-content;
@@ -126,7 +139,7 @@
          font-size: 0.8rem;
         
      }
-      /* ##Footer## */
+        /* ##Footer## */
     
  
 
