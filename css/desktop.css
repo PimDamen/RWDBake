@@ -41,17 +41,24 @@
     .testimonialCard img{             
       
         height:100%;
+        right: 60%;
+        height:100%;
+        
+        transform: rotate(-0deg);
      
     }
     .testimonialCard h2{               
         right: 60%;
         top: unset;
         bottom: 10%;
+        font-size: 1.5rem;
               
     }
     .testimonialCard p{               
         bottom: 25%;
         left: 44%;
+        font-size: 1.3rem;
+    
         
     }
 
