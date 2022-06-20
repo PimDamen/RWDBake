@@ -89,26 +89,29 @@ body{
     /* display: inline-block;         */
     font-family: "open_sanslight";        
     }
-    
-   
-}
-    /* Borders need to be added between li's this does need to cross over to other media.  */
-    /* in mobile, the logo is not included in the grid. but shown in the naxbar instead. they swap over */
     nav  img{
         position: absolute;
         left: 5%;
         top: 20%;
         height: 60%
     }
-    nav li{
-        border-right: 1px solid black;
-    }
+    
     nav li:nth-child(1){
         display: none;
     }
-    nav li:nth-child(9){
-        border: 0;
-    }
+  
+   
+}
+nav li{
+    border-right: 1px solid black;
+}
+nav li:nth-child(9){
+    border: 0;
+}
+
+    /* Borders need to be added between li's this does need to cross over to other media.  */
+    /* in mobile, the logo is not included in the grid. but shown in the naxbar instead. they swap over */
+    
 
         /* END NAVIGATION */
 
@@ -129,9 +132,7 @@ body{
     }
 
     .heroHeader {
-        position: absolute;      
-        color: white;
-        font-size: 2rem;    
+        position: absolute;              
         color: #FFFFFF;
         top: 50%;
         left: 50%;
@@ -147,7 +148,11 @@ body{
          
     }
     .heroHeader h1{
-        color:#FFFF
+        color:#ffffff;
+        font-size: 3rem; 
+    }
+    .heroHeader p {
+        font-size: 1.5rem;
     }
    
                
