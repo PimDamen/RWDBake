@@ -57,7 +57,7 @@
     }
             /* background of navigation hover over should not be set ever.  */
     nav li:nth-child(9):hover{
-        background-color: none;
+        background-color: unset;
         
     }
     
@@ -78,6 +78,7 @@
        
 
     }
+    .productPagination li:nth-child(n+3) {display: none;}
 
         /* ## Testimonials ## */
 
