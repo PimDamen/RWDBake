@@ -62,9 +62,9 @@ body > hr{
     #showMenu::after{
         content:"\2630";
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         text-align:right;        
-        padding:10px;  
+        padding:0rem;  
     }
            
     #showMenu + ul{
@@ -82,7 +82,7 @@ body > hr{
    
         /* when showMenu is checked, show the ul content */
     #showMenu:checked + ul{      
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding:1rem 0;
         font-weight: 800; 
         top: 5vh;
@@ -99,7 +99,10 @@ body > hr{
         height: 60%
     }
     
-    nav li:nth-child(1){
+    nav li:nth-child(9){
+        display: none;
+    }
+    .verticalLine{
         display: none;
     }
   
@@ -163,10 +166,10 @@ nav li:nth-child(9){
     }
     .heroHeader h1{
         color:#ffffff;
-        font-size: 3rem; 
+        font-size: 2rem; 
     }
     .heroHeader p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
    
                
@@ -336,7 +339,7 @@ nav li:nth-child(9){
     .testimonialCard img{
         opacity: unset;
         position: absolute;
-        right: 65%;
+        right: 60%;
         height: 60%;
         top: -1rem;
         transform: rotate(-10deg);
