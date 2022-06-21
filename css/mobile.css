@@ -68,10 +68,11 @@ body > hr{
     }
            
     #showMenu + ul{
+        
         font-size: 0rem;
         transition: all 0.5s ease-in;
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(9, 1fr);
         text-align: center;
         position: absolute;
         top: 5vh;
@@ -99,7 +100,7 @@ body > hr{
         height: 60%
     }
     
-    nav li:nth-child(9){
+    nav li:nth-child(5){
         display: none;
     }
     .verticalLine{
@@ -111,20 +112,19 @@ body > hr{
 nav li{
     background-color: none;
     transition: all 0.5s ease-in-out;
-    /* border-right: 1px solid black; */
+    border-right: 1px solid black;
     /* cancelled border as viable option for seperators */
+    display: block;
 }
 nav li:hover{
     background-color: #FDB822;
 
-    /* border-right: 1px solid black; */
+   
+
 }
 nav li:nth-child(9){
-    display: none;
-    
-    
+    border: none;
 }
-
 
     /* Borders need to be added between li's this does need to cross over to other media.  */
     /* in mobile, the logo is not included in the grid. but shown in the naxbar instead. they swap over */
@@ -215,8 +215,25 @@ nav li:nth-child(9){
         background-repeat: no-repeat;
         
     }
-    .productCard:nth-child(1){
+    /* .productCard:nth-child(1){
         background-image: url("../images/products/m-product-1.jpg");
+    } */
+    .productCard > img{
+        width: 200%;
+        height: 200%;
+        /* transform: translate(-50%, -50%); */
+        object-fit: cover;
+        object-position:  80% 70%;
+    }
+    .productCard .label{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10%;
+        height: 25%;
+        background-color: red;
+        z-index: 2;
+        clip-path: polygon(100% 0%, 100% 100%, 50% 80%, 0 100%, 0 0);
     }
     .productCard:nth-child(2){
         background-image: url("../images/products/m-product-2.jpg");
@@ -254,11 +271,11 @@ nav li:nth-child(9){
 
     /* # set the position to height 0 so it wont show and position absolute,fast transition so it moves*/
     .productInfo{  
-        height: 0;            
+        height: 0%;            
         width: 100%;
         padding: 0;
         position: absolute;
-        bottom: 0;
+        bottom: -20%;
         font-size: 40px;
         transition-duration: 0.1s;
     }
@@ -269,15 +286,19 @@ nav li:nth-child(9){
     .productCard:hover .productInfo{
         height: 50%;
         background-color:#FDB82280;
+        bottom:0;
     
     }
-    .productCard:hover{
-        /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("your_image.png"); */
-        /* er bestaat geen mogelijkheid de achtergrond image van een div in opoacity te wijzigen binnen de background image property */
+    .productCard:hover img{
+        opacity: 0.5;
+      
+    
     }
+   
 
     .productInfo ul{        
         margin: 0 auto;
+        transform: translateY(-30px);
         align-items: center;
         width: 80%;
         display: flex;
@@ -297,15 +318,23 @@ nav li:nth-child(9){
         padding:1rem;
     }
     .productInfo li:nth-child(1)::after{
-        content:"\f002"; 
+        content:"\f002";
+        background-color: #FFFFFF;
+        color:#684F40;
         
     }
     .productInfo li:nth-child(2)::after{
         content:"\f0c1"; 
+        background-color: #FFFFFF;
+        color:#684F40;
+        
         
     }
     .productInfo li:nth-child(3)::after{
-        content:"\f07a"; 
+        content:"\f07a";
+        background-color: #FFFFFF;
+        color:#684F40;
+        
        
     }  
 
@@ -515,6 +544,9 @@ footer .container{
     gap: 1rem;
     margin:0 5%;
     background-color: #333333;
+    background-image: url("../images/icons_and_logos/logo-footer-background.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
     color: white; 
     padding: 5%; 
     font-size: 0.8rem;       

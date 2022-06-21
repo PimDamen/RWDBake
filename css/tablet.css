@@ -24,7 +24,7 @@
 
     nav ul{
         display: grid;
-        grid-template-columns: repeat(8, 1fr) 20% repeat(8, 1fr);       
+        grid-template-columns: repeat(4, 1fr) 20% repeat(4, 1fr);       
         text-align: center; 
         font-family: "open_sansregular";
         color: #684F40;
@@ -34,7 +34,7 @@
     }
     nav li{
         margin: auto 0;
-        border-right: none;
+        /* border-right: none; */
        
     }
     nav li:nth-child(1){
