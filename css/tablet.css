@@ -1,175 +1,155 @@
 @media screen and (min-width: 768px) {
    
-   
-    /* ===========================
-       =====  Navigation  ========
-       =========================== */
-        /* navigation is reset in tablet form and passes through to desktop ignoring all settings from the mobile version.  */
 
-    #showMenu{
-        display: none;
-    }
-    nav{
-        width: 90%;
-        margin: 2% auto;
-        
-    }
-    .mobileOnlyNavImg{
-        display: none;
-    }
-    .verticleLine{
-        background-color:#696969 ;
-        width: 100%;
-        height: 100%;
-    }
+/* ===========================
+    =====  Navigation  ========
+    =========================== */
+    /* navigation is reset in tablet form and passes through to desktop ignoring all settings from the mobile version.  */
+
+#showMenu{
+    display: none;
+}
+nav{
+    width: 90%;
+    margin: 2% auto;        
+}
+.mobileOnlyNavImg{
+    display: none;
+}
+.verticleLine{
+    background-color:#696969 ;
+    width: 100%;
+    height: 100%;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 20% repeat(4, 1fr);       
+    text-align: center; 
+    font-family: "open_sansregular";
+    color: #684F40;
+    font-size: 1.1rem; 
+}
+nav li{
+    margin: auto 0;
+    width:100%;
+}
+nav li a{
+    width: 100%;
+}
+nav li:nth-child(1){
+    color: #cabfa8;
+}
+nav li:nth-child(4){
+    border: none;
+}
+nav li:nth-child(5){
+    border: none;
+}
+nav li:nth-child(9){
+    border: none;      
+}   
+.navImg{
+    display: unset; 
+    grid-column-start: 5;
+    grid-row-end: 6;  
+}           
+nav li:nth-child(5):hover{
+    background-color: unset;        
+}
+
+/* ===========================
+    =====    Products   =======
+    =========================== */
+
+.productContainer{        
+    grid-template-columns:repeat(3, 1fr);   
+}
+.productContainer .productCard:nth-child(n+2) { display:unset;}
+.productContainer .productCard:nth-child(n+7) { display:none}
+footer .container{       
+    grid-template-columns: repeat(2, 1fr);  
+}
+.productPagination li:nth-child(n+3) {display: none;}
+.cardSpacer{     
+    margin: 2% 2% 2% 2%;      
+    overflow: hidden;        
+    position: relative; 
+    width:96%;
+    height:94%;    
+}
+/* !! IMPORTANT .label is for the flag, .noLabel makes sure it's not shown, make sure to match it with the html !! this way you can change it as desired */
+.productCard .label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 50%;
+}    
+
+/* ===========================
+    =====  Testimonials  ======
+    =========================== */
 
 
-    nav ul{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr) 20% repeat(4, 1fr);       
-        text-align: center; 
-        font-family: "open_sansregular";
-        color: #684F40;
-        font-size: 1.1rem; 
-          
-       
-    }
-    nav li{
-        margin: auto 0;
-        width:100%;
-    }
-    nav li a{
-        width: 100%;
-    }
-    nav li:nth-child(1){
-        color: #cabfa8;
-    }
-    nav li:nth-child(4){
-        border: none;
-    }
-    nav li:nth-child(5){
-        border: none;
-    }
-    nav li:nth-child(9){
-        border: none;      
-    }   
-    .navImg{
-        display: unset; 
-        grid-column-start: 5;
-        grid-row-end: 6;  
-        
-
-    }           
-    nav li:nth-child(5):hover{
-        background-color: unset;
-        
-    }
-
-    /* ===========================
-       =====    Products   =======
-       =========================== */
-
-    .productContainer{
-        
-        grid-template-columns:repeat(3, 1fr);     
-        
-    }
-    .productContainer .productCard:nth-child(n+2) { display:unset;}
-    .productContainer .productCard:nth-child(n+7) { display:none}
-    footer .container{
-       
-        grid-template-columns: repeat(2, 1fr);
-       
-
-    }
-    .productPagination li:nth-child(n+3) {display: none;}
-    .cardSpacer{ 
+.testimonialCard img{             
+    right: 60%;
+    height:100%;
+    top: 0rem;
+    transform: rotate(-5deg);
+}
+.testimonialCard h2{               
+    right: 60%;
+    top: unset;
+    bottom: 10%;
+    color: #FFFFFF;   
+    background-color: #684F40;   
+    padding: 0.7rem; 
+            
+}
+.testimonialCard p{               
+    bottom: 25%;
+    left: 45%;         
+}
+    /* ## Services ## */
+.serviceCards {       
+    grid-template-columns: repeat(2, 1fr);       
     
-        margin: 2% 2% 2% 2%;      
-        overflow: hidden;        
-        position: relative; 
-        width:96%;
-        height:94%;
-    
-    }
-    /* !! IMPORTANT .label is for the flag, .noLabel makes sure it's not shown, make sure to match it with the html !! this way you can change it as desired */
-    .productCard .label{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 30%;
-        height: 50%;
-    }    
+}
 
-    /* ===========================
-       =====  Testimonials  ======
-       =========================== */
+/* ===========================
+    =====  About & Sub  =======
+    =========================== */
 
+    .aboutSub{
+    display: grid;        
+    grid-template-rows:max-content;
+    gap: 1rem;        
+    text-align: center;
+}
+.aboutSub div{
+    height: fit-content;
+}
+.aboutSub img {
+    display:unset;
+    margin: 0 auto;
+}
+form {    
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    flex-direction: row; 
+    gap: 1rem;                 
+}  
+    input[type=submit] {
     
-    .testimonialCard img{             
-        right: 60%;
-        height:100%;
-        top: 0rem;
-        transform: rotate(-5deg);
+        width:45%;
+        height: 2rem;
+        font-size: 0.8rem;        
     }
-    .testimonialCard h2{               
-        right: 60%;
-        top: unset;
-        bottom: 10%;
-        color: #FFFFFF;   
-        background-color: #684F40;   
-        padding: 0.7rem; 
-                
-    }
-    .testimonialCard p{               
-        bottom: 25%;
-        left: 45%; 
-        
-    }
-        /* ## Services ## */
-    .serviceCards {       
-        grid-template-columns: repeat(2, 1fr);       
-        
-    }
-    
-    
+/* ===========================
+    =====    Footer      ======
+    =========================== */
 
-    /* ===========================
-       =====  About & Sub  =======
-       =========================== */
-     .aboutSub{
-        display: grid;        
-        grid-template-rows:max-content;
-        gap: 1rem;        
-        text-align: center;
-    }
-    .aboutSub div{
-        height: fit-content;
-    }
-    .aboutSub img {
-        display:unset;
-        margin: 0 auto;
-    }
-    form {    
-        display: flex;
-        justify-content: center;
-        align-items: center;       
-        flex-direction: row; 
-        gap: 1rem; 
-                
-    }
-  
-     input[type=submit] {
-       
-         width:45%;
-         height: 2rem;
-         font-size: 0.8rem;
-        
-     }
-    /* ===========================
-       =====    Footer      ======
-       =========================== */
-    
  
 
 

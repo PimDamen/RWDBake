@@ -12,10 +12,7 @@
         font-family: "open_sansregular";
         color: #684F40;
         font-size: 1.1rem; 
-                    
-        
-    }
-  
+    }  
     nav li:nth-child(5){
         grid-column-start: 1;
         grid-column-end: 9;
@@ -35,23 +32,19 @@
        =====   Products     ======
        =========================== */
 
-    .productContainer{
-        
+    .productContainer{        
         grid-template-columns:repeat(4, 1fr);       
     }
     .productContainer .productCard:nth-child(n+2) { display:unset;}
     .productContainer .productCard:nth-child(n+7) { display:unset}
     .productContainer .productCard:nth-child(n+9) { display:none}
-    .cardSpacer{ 
-    
+    .cardSpacer{     
         margin: 2% 2% 2% 2%;      
         overflow: hidden;        
         position: relative; 
         width:96%;
-        height:96%;
-    
+        height:96%;    
     }
-
    
     /* ===========================
        =====  Testimonials  ======
@@ -67,24 +60,18 @@
         top: unset;
         bottom: 10%;
         font-size: 1.5rem;
-              
     }
     .testimonialCard p{               
         bottom: 25%;
         left: 44%;
         font-size: 1.3rem;
-    
-        
     }
 
     /* ===========================
        =====  Services ======
        =========================== */
-    .serviceCards {
-        
+    .serviceCards {        
         grid-template-columns: repeat(4, 1fr);
-      
-        
     }
 
     /* ===========================
@@ -97,24 +84,20 @@
         grid-template-rows:repeat(2, 0.5fr) ;
         gap: 0.5rem;      
         text-align: left;
-        
     }
      /* #note span2 added so the about and image would take up 2 parts, indirectly putting subscribe and form together */
     .aboutSub img {
         display: unset;        
         grid-column: 2 ;
 		grid-row: 1 / span 2;
-        margin: 0 auto;
-        
+        margin: 0 auto;        
     }
     .aboutSub div:nth-child(1){
         grid-row: 1 / span 2;
-        grid-column: 1;      
-              
+        grid-column: 1;  
     }
     .aboutSub div p{
-        padding-top: 1rem;
-        
+        padding-top: 1rem;        
     }
     form {    
         grid-column: 3;
@@ -124,14 +107,11 @@
         align-items:flex-start;       
         flex-direction: row; 
         gap: 0; 
-        padding: 0 5% 0 0;
-                
+        padding: 0 5% 0 0;                
     }
-    input[type=text] {     
-        
+    input[type=text] {             
          border: 0.5px solid white;
-         margin-right: 10px;
-           
+         margin-right: 10px;           
      }
 
     /* ===========================
@@ -141,8 +121,5 @@
     footer .container{       
       grid-template-columns: repeat(4, 1fr);
     }
-    
-  
- 
 
 }
