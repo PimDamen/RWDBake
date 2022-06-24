@@ -4,21 +4,21 @@
      /*===========================
        =====  Navigation   ======
        =========================== */
+
     nav ul{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);   
-        grid-template-rows: 3;  
-        text-align: center; 
-        font-family: "open_sansregular";
-        color: #684F40;
-        font-size: 1.1rem; 
-    }  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 20% repeat(4, 1fr);       
+    text-align: center; 
+    font-family: "open_sansregular";
+    color: #684F40;
+    font-size: 1.1rem; 
+    }
     nav li:nth-child(5){
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        border:none;
+        grid-column-start: unset;
+        grid-column-end: unset;
+        grid-row-start: unset;
+        grid-row-end: unset;
+        border:unset;
     }
     nav li:nth-child(4){
         border: unset;
@@ -42,8 +42,8 @@
         margin: 2% 2% 2% 2%;      
         overflow: hidden;        
         position: relative; 
-        width:96%;
-        height:96%;    
+        width:94%;
+        height:97%;    
     }
    
     /* ===========================

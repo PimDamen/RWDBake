@@ -28,7 +28,7 @@ body > hr{
     
     hr {
         width:5rem;
-        color: #FDB822;
+        background-color: #FDB822;
     }
       /* Removes all unneeded decoration in links  */
     a, a:focus, a:active {
@@ -88,11 +88,11 @@ body > hr{
     nav li {
     font-family: "open_sanslight";        
     }
-    nav  img{
+    nav img{
         position: absolute;
         left: 5%;
         top: 20%;
-        height: 60%
+        height: 60%;      
     }
     nav li:nth-child(5){
         display: none;
@@ -134,8 +134,7 @@ nav li:nth-child(9){
         width: 100%;
         height: 40vh;
     }    
-    .heroHeader {
-        position: absolute;              
+    .heroHeader {        position: absolute;              
         color: #FFFFFF;
         top: 50%;
         left: 50%;
@@ -256,7 +255,7 @@ nav li:nth-child(9){
         font-family: "Font Awesome 5 Free"; 
         font-weight: 600;
         font-size: 1rem;
-        border: 1px solid black;
+        border: 1px solid #333333;
         border-radius: 50%;
         padding: 1rem;
     }
@@ -295,17 +294,18 @@ nav li:nth-child(9){
         background-color: #FDB822 ;
         border: 1px solid #FDB822;
     }   
-    .products  a{
-        color: #333333;
+    .products a{
+        color: #684F40;
         width:fit-content;
         margin:5% auto;
         text-align: center;
-        font-size: 1.5rem;
-        color: #333333;
+        font-size: 1rem;       
         display:block;
         left: 50%;
         border: 1px solid;
         padding: 1rem;
+        text-transform: uppercase;
+        font-weight: bolder;
     }    
 
     /* ===========================
@@ -341,9 +341,9 @@ nav li:nth-child(9){
         height: 60%;
         top: -1rem;
         transform: rotate(-10deg);
-        border: 1px solid black;
+        border: 1px solid #000000;
         padding: 0.5rem;
-        background-color: white;
+        background-color: #FFFFFF;
     }
     .testimonialCard h2{
         position: absolute;
@@ -458,84 +458,87 @@ nav li:nth-child(9){
         height: 2rem;
         border: 0;
         padding: 0;
-    }
-    
+    }   
 
     /* ===========================
        =====     Footer    =======
        =========================== */
-footer h2{
-    color: #ffffff;    
-}
+
     /* # Note that the social media icons are the old version of FontAwesome  */
-#footerSocMed ::before{
-    font-family: "FontAwesome";
-    color: #FFFFFF;
-    font-weight: normal;
-    font-size: 1rem;
-}
-#footerSocMed a{
-    font-size: 0;
-    text-decoration: none;
-}
-#footerSocMed{
-    display: flex;    
-}
-#footerSocMed li{
-    margin: 0 0.25rem;
-    border: 1px solid #FFFFFF;
-    border-radius: 50%;
-    padding:5px;
-}
-#footerSocMed li:nth-child(1) a::before{ 
-    content:"\f39e";                  
-}
-#footerSocMed li:nth-child(2) a::before{ 
-    content:"\f099";           
-}
-#footerSocMed li:nth-child(3) a::before{ 
-    content:"\f09e";           
-}
-#footerSocMed li:nth-child(4) a::before{ 
-    content:"\f0d2";           
-}
-#footerSocMed li:nth-child(5) a::before{ 
-    content:"\f08c";           
-}
-footer .container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;   
-    background-color: #333333;
-    background-image: url("../images/icons_and_logos/logo-footer-background.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    color: white; 
-    padding: 5%; 
-    font-size: 0.8rem;   
-}
-footer h2{
-    padding: 0 0 1rem 0;
-}
-#footerContactUs ::before{
-    font-family: "FontAwesome";
-    color: #FFFFFF;
-    font-weight: normal;
-    font-size: 1rem;
-    padding-right: 1rem;
-}
-#footerContactUs li:nth-child(1)::before{
-    content:"\f095";
-}
-#footerContactUs li:nth-child(2)::before{
-    content:"\f124";
-}
-#footerContactUs li:nth-child(3)::before{
-    content:"\f0e0";
-}
-#footerContactUs li:nth-child(4)::before{
-    content:"\f0ac";
-}
+    footer h2{
+        padding: 0 0 .5rem 0;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+    time{
+        font-style: italic;
+    }
+    #footerSocMed ::before{
+        font-family: "FontAwesome";
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    #footerSocMed a{
+        font-size: 0;
+        text-decoration: none;
+    }
+    #footerSocMed{
+        display: flex;    
+    }
+    #footerSocMed li{
+        margin: 0 0.25rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        padding:5px;
+    }
+    #footerSocMed li:nth-child(1) a::before{ 
+        content:"\f39e";                  
+    }
+    #footerSocMed li:nth-child(2) a::before{ 
+        content:"\f099";           
+    }
+    #footerSocMed li:nth-child(3) a::before{ 
+        content:"\f09e";           
+    }
+    #footerSocMed li:nth-child(4) a::before{ 
+        content:"\f0d2";           
+    }
+    #footerSocMed li:nth-child(5) a::before{ 
+        content:"\f08c";           
+    }
+    footer .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;   
+        background-color: #333333;
+        background-image: url("../images/icons_and_logos/logo-footer-background.png");
+        background-position: right top;
+        background-size: 30%;
+        background-repeat: no-repeat;
+        color: white; 
+        padding: 5%; 
+        font-size: 0.8rem;   
+    }
+    #footerContactUs ::before{
+        font-family: "FontAwesome";
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+    #footerContactUs li:nth-child(1)::before{
+        content:"\f095";
+    }
+    #footerContactUs li:nth-child(2)::before{
+        content:"\f124";
+    }
+    #footerContactUs li:nth-child(3)::before{
+        content:"\f0e0";
+    }
+    #footerContactUs li:nth-child(4)::before{
+        content:"\f0ac";
+    }
 
 
   
