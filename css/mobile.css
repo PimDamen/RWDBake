@@ -36,9 +36,11 @@ body > hr{
         color: inherit;
    }
 
-        /* ## NAVIGATION ## */
+    /* ===========================
+       =====   Navigation   ======
+       =========================== */
         /* Navigation should only have the dropdown hamburger menu in the moble version.
-        to keep it clean, add a seperate media query so none of the below is taken to the tablet css        */
+        to keep it clean, added a seperate media query so none of the below is taken to the tablet.css        */
 
 @media only screen and (max-width:768px){
    header{
@@ -112,8 +114,7 @@ body > hr{
 nav li{
     background-color: none;
     transition: all 0.5s ease-in-out;
-    border-right: 1px solid black;
-    /* cancelled border as viable option for seperators */
+    border-right: 1px solid black;   
     display: block;
 }
 nav li:hover{
@@ -124,11 +125,7 @@ nav li:hover{
 }
 nav li:nth-child(9){
     border: none;
-}
-
-    /* Borders need to be added between li's this does need to cross over to other media.  */
-    /* in mobile, the logo is not included in the grid. but shown in the naxbar instead. they swap over */
-    
+}    
 
         /* END NAVIGATION */
 
@@ -158,13 +155,6 @@ nav li:nth-child(9){
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
-    
-      
-        
-     
-        /* align-items: center;  */
-      
-         
     }
     .heroHeader h1{
         color:#ffffff;
@@ -181,8 +171,7 @@ nav li:nth-child(9){
    
 
     .products{
-        margin: 0 5%;
-              
+        margin: 0 5%;              
     }
     
     .productHeader{
@@ -206,8 +195,8 @@ nav li:nth-child(9){
         height: 30vh;        
         overflow: hidden;         
     }    
-    .cardSpacer{ 
-     
+     /* # Card spacer seperates the image from the Product card border */
+    .cardSpacer{      
         margin: 2% 2% 2% 2%;      
         overflow: hidden;        
         position: relative; 
@@ -215,12 +204,9 @@ nav li:nth-child(9){
         height:91%;
        
     }
-    
-
     .cardSpacer > img{
         width: 150%;
-        height: 150%;
-        
+        height: 150%;        
         object-fit: cover;
         object-position:  80% 70%;
     }
@@ -246,10 +232,8 @@ nav li:nth-child(9){
         font-weight: bolder;
         color:#FFFFFF;
     }
-   
-   
-
-    /* # set the position to height 0 so it wont show and position absolute,fast transition so it moves*/
+    /* # product info is the div that containt product info
+    set the position to height 0 so it wont show and position absolute,fast transition so it moves*/
 
     .productInfo{  
         height: 0%;            
@@ -266,7 +250,7 @@ nav li:nth-child(9){
     }
 
     /* # added 80 to the background color, notice 80 after #FDB822 */
-
+        /* # Product hover options */
     .productCard:hover .productInfo{
         height: 50%;
         background-color:#FDB82280;
@@ -275,11 +259,7 @@ nav li:nth-child(9){
     }
     .productCard:hover img{
         opacity: 0.5;
-      
-    
     }
-   
-
     .productInfo ul{        
         margin: 0 auto;
         transform: translateY(-30px);
@@ -288,41 +268,38 @@ nav li:nth-child(9){
         display: flex;
         justify-content: space-around;      
         padding: 0 0 5% 0;
-     
     }
 
     /* set general settings for each of the li: after items,  */
 
     .productInfo ::after{
         font-family: "Font Awesome 5 Free"; 
-        font-weight:600;
+        font-weight: 600;
         font-size: 1rem;
         border: 1px solid black;
         border-radius: 50%;
-        padding:1rem;
+        padding: 1rem;
     }
     .productInfo li:nth-child(1)::after{
         content:"\f002";
         background-color: #FFFFFF;
-        color:#684F40;
-        
+        color:#684F40;        
     }
     .productInfo li:nth-child(2)::after{
         content:"\f0c1"; 
         background-color: #FFFFFF;
         color:#684F40;
-        
-        
     }
     .productInfo li:nth-child(3)::after{
         content:"\f07a";
         background-color: #FFFFFF;
         color:#684F40;
-        
-       
     }  
 
-     /* Pagination section */
+     /* # Pagination section */
+     /* #note to teacher, could have used radio buttons, but that would entail another couple of days, added this instead as a placeholder. 
+     ( raio buttons per <li> and on active set it to change color etc)
+     Really want to go ahead and set my mind to JS. Hopefully it's forgiven or be lenient :-)  */
     .productContainer .productCard:nth-child(n+2) { display:none;}
 
     .productPagination { text-align:center; margin: 0 0 1rem 0; }
