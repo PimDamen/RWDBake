@@ -1,7 +1,9 @@
 @media screen and (min-width: 1020px) {
 
 
-        /* ## Navigation ## */
+     /*===========================
+       =====  Navigation   ======
+       =========================== */
     nav ul{
         display: grid;
         grid-template-columns: repeat(8, 1fr);   
@@ -21,11 +23,17 @@
         grid-row-end: 2;
         border:none;
     }
+    nav li:nth-child(4){
+        border: unset;
+        border-right: 1px solid black;
+    }
     .verticleLine{
         appearance: none;
     }
    
-        /* ## Products ## */
+    /* ===========================
+       =====   Products     ======
+       =========================== */
 
     .productContainer{
         
@@ -34,22 +42,28 @@
     .productContainer .productCard:nth-child(n+2) { display:unset;}
     .productContainer .productCard:nth-child(n+7) { display:unset}
     .productContainer .productCard:nth-child(n+9) { display:none}
+    .cardSpacer{ 
+    
+        margin: 2% 2% 2% 2%;      
+        overflow: hidden;        
+        position: relative; 
+        width:96%;
+        height:96%;
+    
+    }
 
    
-        /* ## Testimonials ## */
+    /* ===========================
+       =====  Testimonials  ======
+       =========================== */
                
     
-    .testimonialCard img{             
-      
-        height:100%;
+    .testimonialCard img{ 
         right: 60%;
-        height:100%;
-        
-        transform: rotate(-0deg);
-     
+        transform: rotate(-1deg);
     }
     .testimonialCard h2{               
-        right: 60%;
+        right: 55%;
         top: unset;
         bottom: 10%;
         font-size: 1.5rem;
@@ -63,7 +77,9 @@
         
     }
 
-        /* ## Services ## */
+    /* ===========================
+       =====  Services ======
+       =========================== */
     .serviceCards {
         
         grid-template-columns: repeat(4, 1fr);
@@ -71,7 +87,9 @@
         
     }
 
-    /* ## About ## */
+    /* ===========================
+       =====  About & Sub   ======
+       =========================== */
 
     .aboutSub{
         display: grid;
@@ -116,7 +134,9 @@
            
      }
 
-        /* ## Footer ## */
+    /* ===========================
+       =====     Footer     ======
+       =========================== */
 
     footer .container{       
       grid-template-columns: repeat(4, 1fr);

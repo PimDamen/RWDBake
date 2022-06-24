@@ -1,7 +1,9 @@
 @media screen and (min-width: 768px) {
    
    
-        /* ## Navigation ## */
+    /* ===========================
+       =====  Navigation  ========
+       =========================== */
         /* navigation is reset in tablet form and passes through to desktop ignoring all settings from the mobile version.  */
 
     #showMenu{
@@ -34,36 +36,38 @@
     }
     nav li{
         margin: auto 0;
-        /* border-right: none; */
-       
+        width:100%;
+    }
+    nav li a{
+        width: 100%;
     }
     nav li:nth-child(1){
-        display: unset;
+        color: #cabfa8;
+    }
+    nav li:nth-child(4){
+        border: none;
+    }
+    nav li:nth-child(5){
+        border: none;
     }
     nav li:nth-child(9){
-        display: unset;
-        object-fit: contain;        
-    }
-    /* in the tablet version no border or deviding line after products ad the image */
-    /* nav li:nth-child(n+4):nth-child(-n+5){
-        border: none;
-    } */
+        border: none;      
+    }   
     .navImg{
         display: unset; 
         grid-column-start: 5;
         grid-row-end: 6;  
-        /* width: 100%;       */
+        
 
-    }
-            /* background of navigation hover over should not be set ever.  */
-    nav li:nth-child(9):hover{
+    }           
+    nav li:nth-child(5):hover{
         background-color: unset;
         
     }
-    
-    
 
-        /* ## Products ## */
+    /* ===========================
+       =====    Products   =======
+       =========================== */
 
     .productContainer{
         
@@ -79,12 +83,31 @@
 
     }
     .productPagination li:nth-child(n+3) {display: none;}
+    .cardSpacer{ 
+    
+        margin: 2% 2% 2% 2%;      
+        overflow: hidden;        
+        position: relative; 
+        width:96%;
+        height:94%;
+    
+    }
+    /* !! IMPORTANT .label is for the flag, .noLabel makes sure it's not shown, make sure to match it with the html !! this way you can change it as desired */
+    .productCard .label{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30%;
+        height: 50%;
+    }    
 
-        /* ## Testimonials ## */
+    /* ===========================
+       =====  Testimonials  ======
+       =========================== */
 
     
     .testimonialCard img{             
-        right: 70%;
+        right: 60%;
         height:100%;
         top: 0rem;
         transform: rotate(-5deg);
@@ -111,7 +134,9 @@
     
     
 
-        /* ## About ## */
+    /* ===========================
+       =====  About & Sub  =======
+       =========================== */
      .aboutSub{
         display: grid;        
         grid-template-rows:max-content;
