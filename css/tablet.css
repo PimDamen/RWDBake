@@ -1,5 +1,4 @@
-@media screen and (min-width: 768px) {
-   
+@media screen and (min-width: 768px) {   
 
 /* ===========================
     =====  Navigation  ========
@@ -92,7 +91,7 @@ footer .container{
     left: 0;
     top: 0;
     width: 30%;
-    height: 50%;
+    height: 30%;
 }    
 
 /* ===========================
@@ -140,7 +139,9 @@ footer .container{
 }
 .aboutSub img {
     display:unset;
-    margin: 0 auto;
+    margin: 1rem auto;
+    width: 15%;
+    /* margin: 2rem; */
 }
 form {    
     display: flex;
