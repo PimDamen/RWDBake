@@ -1,10 +1,14 @@
 @charset "UTF-8";
 @import url("css-reset.css");
 @import url("fonts.css");
+/* #note to teacher: Font Awesome CSS version doesnt seem to work at all. the code is compacted and unreadable by VC,
+existing fonts that worked with the official website's description of using it ( through script) do 
+not work anymore when using the CSS version.  still included it by commenting it ou so you can see this for yourself.  */
+/* @import url("fontAwesome.css");  */
 @import url("mobile.css");
 @import url("tablet.css");
 @import url("desktop.css");
-/* @import url("defaultMobile.css"); */
+
 
 
 
